@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;350;400;450;500;700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +11,7 @@
 /* Styling the HTML element. This means that we can style the functionality of the webpage.*/
 html {
     scroll-behavior: smooth;
-    font-size: 12px;
+    font-size: 10px;
     font-family: 'Roboto Slab', serif;
 }
 
@@ -35,8 +35,18 @@ html {
     this case is along the vertical axis).
     */
     align-items: center;
-    border: 3px solid crimson;
 }
+
+.section-title {
+    margin-bottom: 20px;
+    font-size: 6rem;
+    font-weight: 400;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 0.01rem;
+    text-align: center;
+}
+
 img {
     height: 100%;
     width: 100%;
@@ -46,9 +56,27 @@ img {
     */
     object-fit: contain;
 }
-
-/* Defines the properties of the elements designated with "cta". These designated elements represent buttons. */
 .cta {
+    display: inline-block;
+    border: 2px solid black;
+    color: black;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    letter-spacing: 0.01rem;
+    transition: .45s ease;
+    transition-property: background-color, color;
+
+}
+.cta:hover{
+    color: white;
+    background-color: black;
+}
+p{
+    color: black;
+    letter-spacing: 0.005rem;
+    font-size: 1.6rem;
 
 }
 
@@ -68,28 +96,34 @@ img {
     containers will be packed toward the center of the flex container.
     */
     align-content: center;
+    /* We are padding the flex items within the container from the border of the container by 100px for the top and bottom, and 20px for side to side.*/
+    padding: 100px 20px;
 }
 
 /* Encapsulates a flex item (within the overarching flex container) that details the properties of the left column.*/
 #about .about .col-left {
-    border: 3px solid crimson;
+    width: 250px;
+    height: 360px;
+    border: 3px;
 }
 
 /* Encapsulates a flex item (within the overarching flex container) that details the properties of the right column.*/
-#about .about .col-right {
-    border: 3px solid cornflowerblue;
-    min-width: 300px;
-    padding: 10px 10px;
+#about .col-right {
+    padding: 40px;
+    max-width: 750px;
 }
 
 #about .col-right h1 {
-    border: 3px solid orange;
+    text-align: left;
 }
 
 #about .col-right h2 {
-    border: 3px solid green;
+    margin-bottom: 15px;
+    font-size: 2rem;
+    font-weight: 400;
+    color: black;
 }
 
 #about .col-right p {
-    border: 3px solid black;
+    margin-bottom: 20px;
 }

@@ -59,6 +59,7 @@ img {
 .cta {
     display: inline-block;
     border: 2px solid black;
+    border-radius: 5px;
     color: black;
     font-size: 2rem;
     text-decoration: none;
@@ -66,12 +67,11 @@ img {
     margin-top: 30px;
     letter-spacing: 0.01rem;
     transition: .45s ease;
-    transition-property: background-color, color;
-
+    background-color: white;
+    opacity: 0.5;
 }
 .cta:hover{
-    color: white;
-    background-color: black;
+    opacity: 1;
 }
 p{
     color: black;
@@ -87,31 +87,46 @@ p{
     margin: 0px auto;
     align-content: center;
     padding: 100px 20px;
-    border: 1px solid black;
 }
 #home .home .section-title {
     margin-bottom: 0px;
-    border: 1px solid black;
+    font-size: 5.5rem;
 }
-#home .home .home-text{
-    font-size: 20rem;
-    font-weight: 350;    
+#home .home .home-text {
     margin-bottom: 0px;
     text-align: center;
-    border: 1px solid green;
+    min-width: 360px;
 }
+#home .home-text h1 {
+    font-size: 19rem;
+    font-weight: 350;
+    color: black;
+    margin-bottom: 5px;
+}
+
 #home .home .social-icons {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-content: center;
     gap: 10px;
-    border: 1px solid black;
-
+    background-color: white;
 }
-#home .home .social-item {
+#home .home .social-item{
     height: 50px;
     width: 50px;
+    text-align: center;
+}
+
+#home .home .social-item img {
+    transition: .45s ease;
+    opacity: 0.5;
+}
+#home .home .social-item img:hover{
+    opacity: 1;
 
 }
+
 
 /* About Section ------------------------------------------------------------------------------------------*/
 /* An extension of defining the flex container for the "About Section". */
@@ -130,7 +145,6 @@ p{
     align-content: center;
     /* We are padding the flex items within the container from the border of the container by 100px for the top and bottom, and 20px for side to side.*/
     padding: 100px 20px;
-
         
 }
 
@@ -171,6 +185,12 @@ p{
     color: black;
 }
 
+#about .col-right .cta {
+    padding: 10px 10px;
+    margin-top: 20px;
+
+}
+
 #about .col-right p {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }

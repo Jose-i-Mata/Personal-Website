@@ -83,6 +83,10 @@ p{
 #home .home {
     flex-direction: column;
 }
+#home .home .home-text{
+    font-size: 20rem;
+    font-weight: 400;
+}
 #home .home .social-icons {
     display: flex;
     flex-direction: row;

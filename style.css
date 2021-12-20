@@ -1,64 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;700&display=swap');
 * {
     margin: 0;
     padding: 0;
+    /*
+    box-sizing: border-box an element's total width and height includes the padding and border.
+    */
     box-sizing: border-box;
 }
+
+/* Styling the HTML element. This means that we can style the functionality of the webpage.*/
+html {
+    scroll-behavior: smooth;
+    font-size: 12px;
+    font-family: 'Roboto Slab', serif;
+}
+
+/* Defines the properties of any of the containers designated as classes with the keyword "container".*/
 .container {
+    /* Set the height of the container to be the entirety of the viewport height. */
     min-height: 100vh;
+    /* Set the width of the container to be the entirety of the width of the viewport width. */
     width: 100%;
+    /* display: flex defines a flex container (an area of a document laid to contain subsequent flex items). 
+    Note that the flex direction is "row" by default. The main-axis is from left to right.
+    */
     display: flex;
-    align-items: center;
+    /*
+    justify-content defines the alignment of flex items within the flex container along the main axis (the main
+    axis in this case is along the horizontal axis).
+    */
     justify-content: center;
+    /*
+    align-items defines the alignment of flex items within the flex container along the cross-axis (the croass-axis in
+    this case is along the vertical axis).
+    */
+    align-items: center;
+    border: 3px solid crimson;
 }
 img {
     height: 100%;
     width: 100%;
+    /*
+    object-fit: property is used to specify how an <img> or <video> should be resized to fit its container.
+    contain: The replaced content is scaled to maintain its aspect ratio while fitting within the element's content box
+    */
     object-fit: contain;
 }
 
+/* Defines the properties of the elements designated with "cta". These designated elements represent buttons. */
+.cta {
+
+}
+
 /* About Section */
+
+/* An extension of defining the flex container for the "About Section". */
 #about .about {
-	flex-direction: column-reverse;
-	text-align: center;
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 100px 20px;
+    /* The flex items within the flex container will wrap-reverse when the viewport width become too small. */
+    flex-wrap: wrap-reverse;
+    /* The maximum width of this specific flex container is 1200px. */
+    max-width: 1200px;
+    /* The margins space that surrounds the border of the current container element has no space between the top and bottom border and top and bottom screen. Horizontally, the margin between 
+    the current container element's right and left border and the right and left corners of the screen are automatically adjusted to be centered. */
+    margin: 0 auto;
+    /*
+    align-content determines the spacing between lines of flex items within the container. In this case, when the flex items in the flex container wrap-reverse, then the separate lines of flex
+    containers will be packed toward the center of the flex container.
+    */
+    align-content: center;
 }
-#about .col-left {
-	width: 250px;
-	height: 360px;
+
+/* Encapsulates a flex item (within the overarching flex container) that details the properties of the left column.*/
+#about .about .col-left {
+    border: 3px solid crimson;
 }
-#about .col-right {
-	width: 100%;
+
+/* Encapsulates a flex item (within the overarching flex container) that details the properties of the right column.*/
+#about .about .col-right {
+    border: 3px solid cornflowerblue;
+    min-width: 300px;
+    padding: 10px 10px;
 }
+
+#about .col-right h1 {
+    border: 3px solid orange;
+}
+
 #about .col-right h2 {
-	font-size: 1.8rem;
-	font-weight: 500;
-	letter-spacing: .2rem;
-	margin-bottom: 10px;
+    border: 3px solid green;
 }
+
 #about .col-right p {
-	margin-bottom: 20px;
-}
-#about .col-right .cta {
-	color: black;
-	margin-bottom: 50px;
-	padding: 10px 20px;
-	font-size: 2rem;
-}
-#about .col-left .about-img {
-	height: 100%;
-	width: 100%;
-	position: relative;
-	border: 10px solid white;
-}
-#about .col-left .about-img ::after {
-	content: '';
-	position: absolute;
-	left: -33px;
-	top: 19px;
-	height: 98%;
-	width: 98%;
-	border: 7px solid crimson;
-	z-index: -1;
+    border: 3px solid black;
 }

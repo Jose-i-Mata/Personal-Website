@@ -52,7 +52,7 @@ img {
     width: 100%;
     /*
     object-fit: property is used to specify how an <img> or <video> should be resized to fit its container.
-    contain: The replaced content is scaled to maintain its aspect ratio while fitting within the element's content box
+    contain: The replaced content is scaled to maintain its aspect ratio while fitting within the element's content box.
     */
     object-fit: contain;
 }
@@ -79,9 +79,16 @@ p{
     font-size: 1.6rem;
 
 }
+/* Hero Section*/
+#home .home {
+    flex-direction: column;
+}
+#home .home .social-icons {
+    display: flex;
+    flex-direction: row;
+}
 
 /* About Section */
-
 /* An extension of defining the flex container for the "About Section". */
 #about .about {
     /* The flex items within the flex container will wrap-reverse when the viewport width become too small. */
@@ -98,13 +105,28 @@ p{
     align-content: center;
     /* We are padding the flex items within the container from the border of the container by 100px for the top and bottom, and 20px for side to side.*/
     padding: 100px 20px;
+
+        
 }
 
 /* Encapsulates a flex item (within the overarching flex container) that details the properties of the left column.*/
-#about .about .col-left {
-    width: 250px;
-    height: 360px;
-    border: 3px;
+#about .col-left {
+    width: 360px;
+    height: 250px;
+}
+#about .col-left .about-img {
+    position: relative;
+}
+
+#about .col-left .about-img::after {
+    content: '';
+	position: absolute;
+	left: -33px;
+	top: 16px;
+	height: 98%;
+	width: 98%;
+	border: 10px solid black;
+	z-index: -1;
 }
 
 /* Encapsulates a flex item (within the overarching flex container) that details the properties of the right column.*/

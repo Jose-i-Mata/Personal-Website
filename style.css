@@ -58,9 +58,9 @@ img {
 }
 .cta {
     display: inline-block;
-    border: 2px solid black;
-    border-radius: 5px;
-    color: black;
+    border: 2px solid #030201;
+    border-radius: 6px;
+    color: #030201;
     font-size: 2rem;
     text-decoration: none;
     padding: 10px 30px;
@@ -127,7 +127,9 @@ p{
 
 }
 
-
+@keyframes identifier {
+    
+}
 /* About Section ------------------------------------------------------------------------------------------*/
 /* An extension of defining the flex container for the "About Section". */
 #about .about {

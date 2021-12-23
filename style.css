@@ -82,7 +82,7 @@ p{
 }
 
 #home .home .name-text {
-    font-size: 20rem;
+    font-size: 15rem;
     font-weight: 350;
 }
 
@@ -117,17 +117,19 @@ p{
     margin: 0 auto;
     padding: 100px 20px;
     
-    --about_image_horizontal_frame: 20px;
-    --about_image_vertical_frame: 15px;
+    --about_image_horizontal_frame: 10px;
+    --about_image_vertical_frame: 7px;
 }
 
 #about .col {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap-reverse;
     align-items: center;
     justify-content: center;
     align-content: right;
+
+    margin-top: 40px;
 
 }
 
@@ -238,5 +240,7 @@ p{
 
 #contact .contact-item .social-text p {
     margin-top: 15px;
+    color: black;
+    text-decoration: none;
 
 }

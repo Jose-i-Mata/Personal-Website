@@ -8,7 +8,7 @@
 
 html {
     scroll-behavior: smooth;
-    font-size: 10px;
+    font-size: 11px;
     font-family: 'Roboto Slab', serif;
 }
 
@@ -81,7 +81,7 @@ p{
 }
 
 #home .home .greeting-text {
-    font-size: 8rem;
+    font-size: 7.5rem;
     font-weight: 400;
 }
 
@@ -118,89 +118,57 @@ p{
     max-width: 1200px;
     margin: 0 auto;
     padding: 100px 20px;
-
-    border: 1px solid black;
 }
 
+#skills .skills .section-title span {
+    font-size: 2rem;
+}
 
 #skills .col {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    max-width: 1200px;
 
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-evenly;
     align-content: center;
-
-    border: 1px solid black;
 }
-
 
 #skills .col .skillset-col .col-name h1 {
     font-size: 2rem;
     font-weight: 400;
 }
 
-
 #skills .col .skillset-col {
-
     display: flex;
     flex-direction: column;
-
-
     width: 300px;
+
+    align-items: center;
 
     margin: 20px;
     margin-top: 0px;
-
-
-    border-radius: 6px;
-    border: 2px solid black;  
-}
-
-#skills .col .skillset-col:nth-child(2n) {
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-#skills .col .skillset-col:nth-child(3) {
-    display: flex;
-    flex-direction: column;
-}
-
-#skills .col .skillset-col:nth-child(3) .education {
-    border: 3px solid crimson;
-}
-
-#skills .col .skillset-col:nth-child(3) .soft-skills {
-    border: 3px solid purple;
 }
 
 #skills .col .skillset-col .skillset-item {
     display: flex;
     flex-direction: row;
+    width: 300px;
 
     align-items: center;
     justify-content: space-evenly;
 
-    padding: 20px;
-
+    padding: 15px;
     margin-top: 20px;
     border-radius: 6px; 
     border: 2px solid black
-}
-
-#skills .col .skillset-col .skillset-item .skill-title {
-
-    
 }
 
 #skills .col .skillset-col .skillset-icon {
     width: 55px;
     height: 55px;
 }
-
-
 
 /* About Section ------------------------------------------------------------------------------------------*/
 
@@ -221,7 +189,6 @@ p{
     align-items: center;
     justify-content: center;
     align-content: right;
-
 }
 
 #about .col-left {
@@ -271,6 +238,7 @@ p{
 #contact .contact{
     flex-direction: column;
     max-width: 1200px;
+
     margin: 0 auto;
     padding: 100px 20px;
 }
@@ -280,13 +248,11 @@ p{
     flex-direction: row;
     flex-wrap: wrap;
 
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-
-    
     max-width: 1200px;
 
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
 }
 
 #contact .contact-items .contact-item {
@@ -300,7 +266,7 @@ p{
 
     margin: 20px;
     margin-top: 0px;
-    padding: 20px;
+    padding: 15px;
     border-radius: 6px;
     border: 2px solid black;
 }
@@ -322,7 +288,6 @@ p{
 
     align-items: flex-start;
     justify-content: center;
-
 }
 
 #contact .contact-item .social-text h1 {

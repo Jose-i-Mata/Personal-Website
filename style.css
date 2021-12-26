@@ -44,10 +44,10 @@ img {
 .cta {
     display: inline-block;
     font-size: 2rem;
-    color: #9c9c9c;
+    color: gray;
     text-decoration: none;
     letter-spacing: 0.005rem;
-    transition: .5s ease;
+    transition: .45s ease;
 }
 
 .cta:hover{
@@ -96,17 +96,15 @@ li {
     flex-direction: row;
 
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 
     margin-left: 20px;
     margin-right: 20px;
 
+    border: 1px solid green;
+
 }
 
-#header .nav-bar .nav-list li:nth-child(2n) {
-    margin-left: 20px;
-    margin-right: 20px;
-}
 
 /* Hero Section ------------------------------------------------------------------------------------------ */
 
@@ -121,9 +119,10 @@ li {
     font-size: 8rem;
     font-weight: 400;
     }
-
+#home .home .name-text {
+}
 #home .home .name-text h1{
-    font-size: 20rem;
+    font-size: 15rem;
     font-weight: 350;
 }
 

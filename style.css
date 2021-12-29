@@ -21,7 +21,6 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .section-title {
@@ -46,7 +45,7 @@ img {
     font-size: 2rem;
     color: gray;
     text-decoration: none;
-    letter-spacing: 0.005rem;
+    letter-spacing: 0rem;
     transition: .45s ease;
 }
 
@@ -64,24 +63,11 @@ p{
     font-size: 1.6rem;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-
-}
-li {
-    display: inline;
-}
 /* Header Section ------------------------------------------------------------------------------------------ */
 
 #header .header {
-
     position: fixed;
-    min-height: 8vh;
-
-    background-color: white;
-
+    min-height: 7.5vh;
 
     z-index: 999;
 
@@ -89,22 +75,53 @@ li {
 
 
 #header .nav-bar {
-
     width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
 
-    align-items: center;
-    justify-content: center;
+    max-width: 1200px;
 
-    margin-left: 20px;
-    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 
-    border: 1px solid green;
-
+    background-color: white;
+    border: 1px solid black;
 }
 
+#header .nav-bar .nav-logo{
+    float: left;
+    font-size: 2rem;
+    color: black;
+}
+
+#header .nav-bar .nav-list {
+    float: right;
+}
+
+#header .nav-bar .nav-list a:nth-child(odd) {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#header .nav-bar .hamburger {
+    display: none;
+}
+
+#header .nav-bar .hamburger .bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #101010;
+}
+
+@media screen and (max-width: 750px) {
+
+    #header .header .nav-bar .nav-list {
+        display: none;
+    }
+    #header .header .nav-bar .hamburger{
+        display: block;
+        float: left;
+    }
+}
 
 /* Hero Section ------------------------------------------------------------------------------------------ */
 
@@ -116,13 +133,12 @@ li {
 }
 
 #home .home .greeting-text {
-    font-size: 8rem;
+    font-size: 6rem;
     font-weight: 400;
-    }
-#home .home .name-text {
 }
+
 #home .home .name-text h1{
-    font-size: 15rem;
+    font-size: 14rem;
     font-weight: 350;
 }
 
@@ -134,7 +150,7 @@ li {
     justify-content: center;
     align-content: center;
 
-    gap: 15px;
+    gap: 20px;
 }
 
 
@@ -192,7 +208,7 @@ li {
     align-items: center;
     justify-content: space-around;
 
-    padding: 15px;
+    padding: 20px;
     margin-top: 20px;
     border-radius: 6px; 
     border: 2px solid black
@@ -200,6 +216,9 @@ li {
 
 #skills .col .skillset-col .skillset-icon {
     width: 50px;
+}
+
+#skills .col .skillset-col .skill-title {
 }
 
 /* About Section ------------------------------------------------------------------------------------------*/
@@ -290,7 +309,7 @@ li {
 
     margin-top: 0px;
     margin-bottom: 20px;
-    padding: 15px;
+    padding: 20px;
     border-radius: 6px;
     border: 2px solid black;
 }
@@ -298,11 +317,13 @@ li {
 #contact .contact-items .contact-item:nth-child(2n) {
     margin-left: 30px;
     margin-right: 30px;
+
 }
 
-#contact .contact-item .social-icon {
+#contact .contact-item .social-icon {   
     width: 50px;
 }
+
 
 #contact .contact-item .social-text {
     display: flex;
@@ -317,8 +338,7 @@ li {
     font-weight: 400;
 }
 
+
 #contact .contact-item .social-text p {
-    margin-top: 10px;
-    color: black;
-    text-decoration: none;
+    margin-top: 12.5px;
 }
